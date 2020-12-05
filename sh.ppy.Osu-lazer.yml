@@ -11,7 +11,7 @@ finish-args:
 - "--socket=pulseaudio"
 - "--device=all"
 - "--filesystem=home:ro"
-- "--env=DOTNET_CLI_TELEMETRY_OPTOUT=false"
+- "--env=DOTNET_CLI_TELEMETRY_OPTOUT=true"
 
 command: start
 
@@ -34,6 +34,7 @@ modules:
   build-options:
     build-args:
     - "--share=network"
+    - "--env=DOTNET_CLI_TELEMETRY_OPTOUT=true"
   build-commands:
   - mkdir -p /app/osu
   - /usr/lib/sdk/dotnet/bin/dotnet publish osu.Desktop --configuration Release --runtime linux-x64 --self-contained false /property:Version=2020.1128.0 --output /app/osu
