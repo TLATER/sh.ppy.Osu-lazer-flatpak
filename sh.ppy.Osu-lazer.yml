@@ -42,9 +42,6 @@ modules:
     url: https://github.com/ppy/osu.git
     tag: 2020.306.0
     disable-shallow-clone: true
-  - type: patch
-    path: compiler30.patch
-    use-git: true
 
 - name: start
   buildsystem: simple
