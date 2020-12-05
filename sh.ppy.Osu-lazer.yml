@@ -10,7 +10,6 @@ finish-args:
 - "--device=dri"
 - "--socket=pulseaudio"
 - "--device=all"
-- "--filesystem=home:ro"
 - "--env=DOTNET_CLI_TELEMETRY_OPTOUT=true"
 
 command: start
